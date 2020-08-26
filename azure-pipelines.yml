@@ -37,7 +37,7 @@ steps:
   inputs:
     projectName: 'WebGoatDotNet_Azure'
     enableSastScan: true
-    CheckmarxService: 'CxSAST_VM20'
+    CheckmarxService: 'CxSAST_CxPC'
     fullTeamName: 'CxServer/Azure'
     incScan: false
     enableDependencyScan: false
