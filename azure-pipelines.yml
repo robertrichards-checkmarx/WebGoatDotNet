@@ -39,6 +39,6 @@ steps:
     enableSastScan: true
     CheckmarxService: 'CxSAST_CxPC'
     customPreset: 'Checkmarx Default'
-    fullTeamName: 'CxServer/Azure'
+    fullTeamName: 'CxServer\Azure'
     incScan: false
     enableDependencyScan: false
