@@ -1,11 +1,4 @@
 # ASP.NET
-- task: Application security testing@2020
-  inputs:
-    projectName: 'WebGoatDotNet_Azure'
-    enableSastScan: true
-    CheckmarxService: 'CxSAST_VM20'
-    fullTeamName: 'CxServer\SP\Company\Azure'
-    enableDependencyScan: false
 # Build and test ASP.NET projects.
 # Add steps that publish symbols, save build artifacts, deploy, and more:
 # https://docs.microsoft.com/azure/devops/pipelines/apps/aspnet/build-aspnet-4
@@ -39,3 +32,11 @@ steps:
   inputs:
     platform: '$(buildPlatform)'
     configuration: '$(buildConfiguration)'
+
+- task: Application security testing@2020
+  inputs:
+    projectName: 'WebGoatDotNet_Azure'
+    enableSastScan: true
+    CheckmarxService: 'CxSAST_VM20'
+    fullTeamName: 'CxServer\SP\Company\Azure'
+    enableDependencyScan: false
